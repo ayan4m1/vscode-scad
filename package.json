@@ -1,0 +1,45 @@
+{
+  "name": "vscode-scad",
+  "description": "A VS Code extension for SCAD language support",
+  "author": "ayan4m1 <andrew@bulletlogic.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ayan4m1/vscode-scad.git"
+  },
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "scad",
+        "aliases": [
+          "openscad",
+          "scad"
+        ],
+        "extensions": [
+          ".scad"
+        ],
+        "configuration": "./scad.configuration.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "scad",
+        "path": "./snippets/snippets.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "scad",
+        "scopeName": "source.scad",
+        "path": "./syntaxes/scad.tmLanguage."
+      }
+    ]
+  }
+}
